@@ -18,7 +18,9 @@ public class Tester {
 
         System.out.print("Введите выражение для вычислений:");
         String line = in.nextLine();
-        // System.out.println(line);
+
+        in.close();
+
         String[] arr = line.split(" ");
 
         boolean arabMatches = Pattern.matches("\\d{1,2}\\s\\W\\s\\d{1,2}", line);
